@@ -26,6 +26,14 @@
                     document.querySelector('#fons').setAttribute('rotation', '0 0 0');  
                     posicio=0;  //fora
                     break;
+                case 2: 
+                  console.log("canviant fons 3");
+                  document.querySelector('#sortida1').setAttribute('position', '0 5 5');
+                  document.querySelector('#sortido1').setAttribute('rotation', '0 90 2');
+                  document.querySelector('#fons').setAttribute('src', '#info1');
+                  document.querySelector('#fons').setAttribute('rotation', '0 0 0');
+                  posicio=2 //aula info1
+                  break;
                  }
            })
          }
@@ -41,6 +49,7 @@
        <img id="exterior" src="exterior.jpg" >    
        <img id="hall" src="hall.jpg" >
        <img id="imgSortida" src="entragroc.png" >
+       <img id ="info1" src="info1.jpg" >
     </a-assets>
    
     <a-entity camera look-controls wasd-controls="false">
